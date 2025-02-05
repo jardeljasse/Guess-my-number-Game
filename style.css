@@ -72,7 +72,7 @@ main .box-question {
   color: #00012c;
 
   animation-fill-mode: both;
-  animation: box-infinite 5s infinite ease-in alternate-reverse;
+  animation: box-infinite 2s infinite ease-in alternate-reverse;
   transition: 0.5s ease-in;
 
   /* right: 10%;
@@ -161,6 +161,7 @@ main .choose-range a {
   text-align: center;
   font-weight: bolder;
   transition: all 0.3s ease;
+  color: #fcf;
 }
 main .choose-range a:hover {
   color: #fff;
@@ -174,16 +175,23 @@ main .choose-range a:hover {
     align-items: center;
     gap: 1rem;
   }
+  main .box-question {
+    padding: 0rem;
+    top: -50px;
+  }
   main .bottom-section {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: 8rem;
+    margin-top: 6rem;
   }
   main .bottom-section .score-section {
     text-align:center;
   }
+  main .bottom-section .generate-section input{
+  padding: 0.2rem;
+}
   main .bottom-section .score-section p:nth-child(2) {
     margin-top: 0rem;
   }
@@ -207,6 +215,9 @@ main .choose-range a:hover {
     justify-content: center;
     align-items: center;
     height: 50vh;
+  }
+  main .box-question{
+    animation: box-infinite 1s infinite ease-in alternate-reverse;
   }
   
 }
