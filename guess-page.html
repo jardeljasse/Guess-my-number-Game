@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guess my number | © 2024</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="images/guess-me.png" type="image/x-icon">
+  </head>
+  <body>
+    <main>
+      <div class="top-section">
+        <button class="btn-play-again">Play Again</button>
+        <a href="index.html" style="color: white; text-decoration: none;">Exit</a>
+        <h2>Between [<span class="min-range">0</span>-<span class="max-range">0</span>]</h2>
+      </div>
+      <h1>Gues my number</h1>
+      <hr>
+      <div class="line">
+          <div class="box-question"><span class="random-number">?</span></div>
+      </div>
+      <div class="bottom-section">
+        <div class="generate-section">
+          <input type="number" name="generateNumber" />
+          <button class="btn-generate">Guess</button>
+        </div>
+        <div class="score-section">
+          <p><span class="word-status">🍳 Try to guess my number</span></p>
+          <p>💯 Score:  <span class="score"></span></p>
+          <p>🥇 High Score: <span class="high-score">0</span></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

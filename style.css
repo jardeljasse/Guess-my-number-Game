@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Chelsea+Market&family=Great+Vibes&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Parisienne&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #00d4ff, #8a2be2, #00ff99, #002244;
+    background-image: linear-gradient(to right, #00d4ff, #002244); */
+  /* background-color: #240046;
+    color: #fff; */
+  font-family: "Bungee", sans-serif;
+  color: #fa77ff;
+  background-color: #00012c;
+  max-height: 100vh;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+.light-text {
+  color: #fff;
+}
+button {
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+button:hover {
+  background-image: linear-gradient(to bottom, #240046, #8a2be2);
+}
+.btn-play-again {
+  width: 200px;
+}
+h1 {
+  text-align: center;
+}
+main .top-section + div {
+  background-color: red;
+  height: 300px;
+  width: 100%;
+}
+main .line {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: white;
+  margin-top: 5rem;
+}
+main .box-question {
+  position: relative;
+  /* left: 50%; */
+  display: flex;
+  width: 100px;
+  height: 100px;
+  font-size: 3rem;
+  background-color: #fff;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-top: 5rem;
+  color: #00012c;
+
+  animation-fill-mode: both;
+  animation: box-infinite 5s infinite ease-in alternate-reverse;
+  transition: 0.5s ease-in;
+
+  /* right: 10%;
+  right: 20%;
+  right: 30%;
+  right: 0%;
+  left: 10%;
+  left: 20%;
+  left: 30%; */
+  /* left: 0%; */
+}
+@keyframes box-infinite {
+  0% {
+    background-color: #fa77ff;
+    right: 30%;
+    border-radius: 999px;
+  }
+  100% {
+    background-color: #071197;
+    border-radius: 9999px;
+    right: -30%;
+    color: #fff;
+  }
+}
+hr {
+  position: absolute;
+  top: 42%;
+  width: 100%;
+  z-index: -1;
+  display: none;
+}
+
+main .bottom-section {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 10rem;
+}
+
+main .bottom-section .generate-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main .bottom-section .generate-section input,
+main .choose-range input {
+  padding: 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  width: 200px;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+main .bottom-section .score-section {
+  color: #fff;
+  line-height: 1.9rem;
+}
+main .bottom-section .score-section p:nth-child(2) {
+  margin-top: 4rem;
+}
+
+/* index page */
+
+.top-section-init {
+  padding-block: 5rem;
+  line-height: 3rem;
+  text-align: center;
+}
+.choose-range {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+main .choose-range input {
+  padding: 0.5rem;
+  margin-block: 0.5rem;
+}
+main .choose-range a {
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 0.8rem 1rem;
+  border-radius: 9999px;
+  width: 300px;
+  text-align: center;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+}
+main .choose-range a:hover {
+  color: #fff;
+  border: 2px solid #fff;
+}
+
+@media (max-width: 500px) {
+  .top-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .bottom-section {
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  main .bottom-section .score-section {
+    text-align:center;
+  }
+  main .box-question{
+    animation: box-infinite .9    s infinite ease-in alternate-reverse;
+  }
+  main .top-section-init{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
+}
+@media (min-width:  501px) and (max-width: 768px){
+  main .top-section-init{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+}
