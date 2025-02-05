@@ -72,7 +72,6 @@ document.querySelector(".btn-generate").addEventListener('click', () => {
 
     if (score === 0) {
         document.querySelector("body").style.backgroundColor = "#c22e14";
-        document.getElementsByTagName('button').style.backgroundColor = 'transparent'
         Message("Game Over")
         return
     } if (guess === "" || isNaN(guess)) {
